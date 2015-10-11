@@ -75,5 +75,8 @@
     <access origin="*" />
     <feature name="Notification">
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
-</feature>
+</feature
+<plugin>
+<plugin name="NetworkStatus" value="org.apache.cordova.NetworkManager" />
+</plugin>
 </widget>
