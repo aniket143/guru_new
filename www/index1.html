@@ -17,8 +17,9 @@ if (doesConnectionExist() == true) {
 	//	alert("connection exists!");
 			redirect();
 		} else {
-			 navigator.notification.alert("connection doesn't exist!");
-		window.location.reload();
+			 navigator.notification.alert('connection doesnt exist!',alertDismissed,'Reload Page','Done');
+			
+                            window.location.reload();
 	}
 	}
 	
