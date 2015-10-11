@@ -192,8 +192,8 @@ document.getElementById('pwd').value="";
          //ani
      
     function onDeviceReady() {
-        document.addEventListener("exitapp", exitFromApp, true);
-        document.addEventListener("offline", onOffline, true);
+        document.addEventListener("exitapp", exitFromApp, false);
+        document.addEventListener("offline", onOffline, false);
 
     }
     //ani
@@ -211,7 +211,7 @@ document.getElementById('pwd').value="";
     
 </script>
 </head>
-<body onload="javascript:onLoad()">
+<body onload="javascript:onLoad();">
 <!--.... ......First Page........ -->
 <div data-role="page" id="page" style="background-color:white;" >
 <div data-role="main" class="ui-content">
