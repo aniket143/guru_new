@@ -13,7 +13,7 @@
 <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
 <script type="text/javascript" charset="utf-8"> 
 function checkConnection() {
-	alert('chkconn');
+//	alert('chkconn');
 //if (doesConnectionExist() == true) {
 	//	alert("connection exists!");
 			redirect();
@@ -71,7 +71,7 @@ var tieup=document.getElementById('tieup').checked;
 var fname=document.getElementById('fname').value;
 var pwd=document.getElementById('pwd').value;
 
-alert(shop);
+alert(tieup);
 
 if(shop==false && tieup==false)
 {
@@ -79,22 +79,19 @@ alert("Please Select Option First");
 document.getElementById('fname').value="";
 document.getElementById('pwd').value="";
 }
-else
-{
-if(fname==""&& pwd=="")
+else if(fname==""&& pwd=="")
 {
 //alert("Please enter details properly");
 document.getElementById('fname').value="";
 document.getElementById('pwd').value="";
 }
-else{
-   if(tieup==true)
+else if(tieup==true)
     {
   $(function() {
   $("#callAjax2").ready(function() {
             var fname = $.trim($("#fname").val());
             var pwd = $.trim($("#pwd").val());
-            
+            alert(fname);
 
           if(fname.length > 0 && pwd.length > 0 )
             { $.ajax({
@@ -186,7 +183,7 @@ document.getElementById('pwd').value="";
   });
         }
 }
-}}
+
 
 
      function onLoad()
