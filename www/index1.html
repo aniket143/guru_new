@@ -13,14 +13,14 @@
 <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
 <script type="text/javascript" charset="utf-8"> 
 function checkConnection(e) {
-if (doesConnectionExist() == true) {
+//if (doesConnectionExist() == true) {
 	//	alert("connection exists!");
 			redirect();
-		} else {
-			 navigator.notification.alert('connection doesnt exist!',alertDismissed,'Reload Page','Done');
+	//	} else {
+	//		 navigator.notification.alert('connection doesnt exist!',alertDismissed,'Reload Page','Done');
 			
-                            window.location.reload();
-	}
+       //                     window.location.reload();
+//	}
 	}
 	
 	function doesConnectionExist() {
@@ -64,10 +64,14 @@ redirect();
 }
   function redirect()
 {
+	
 var shop=document.getElementById('shop').checked;
 var tieup=document.getElementById('tieup').checked;
 var fname=document.getElementById('fname').value;
 var pwd=document.getElementById('pwd').value;
+
+alert(shop);
+
 if(shop==false && tieup==false)
 {
 alert("Please Select Option First");
