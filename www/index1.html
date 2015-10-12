@@ -7,10 +7,14 @@
  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />  
  <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
  <script src="js/phonegap-1.4.1.js"></script>
-<script src="js/jquery-1.11.3.min.js"></script>
- <script src="js/jquery.mobile-1.4.5.js"></script>  
- <script src="js/jquery-1.7.min.js"></script>  
 <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+
+<script type="text/javascript">
+$(document).bind("mobileinit", function() {
+    $.support.cors = true;
+    $.mobile.allowCrossDomainPages = true;
+});
+</script>
 <script type="text/javascript" charset="utf-8"> 
 function checkConnection() {
 //	alert('chkconn');
@@ -209,12 +213,7 @@ document.getElementById('pwd').value="";
       navigator.app.exitApp();
     }
 	
-	$( document ).bind( "mobileinit", function() {
-    // Make your jQuery Mobile framework configuration changes here!
-$.mobile.phonegapNavigationEnabled = true
-    $.mobile.allowCrossDomainPages = true;
-});
-    
+ 
 </script>
 </head>
 <body onload="javascript:onLoad();">
@@ -247,4 +246,8 @@ $.mobile.phonegapNavigationEnabled = true
     </div> 
     <!--.... ......End of First Page........ -->
 </body>
+<script src="js/jquery-1.11.3.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.js"></script>  
+ <script src="js/jquery-1.7.min.js"></script>  
+
 </html>
