@@ -91,7 +91,7 @@ else if(tieup==true)
   $("#callAjax2").ready(function() {
             var fname = $.trim($("#fname").val());
             var pwd = $.trim($("#pwd").val());
-            //alert(fname);
+            alert(fname);
 
           if(fname.length > 0 && pwd.length > 0 )
             { $.ajax({
@@ -110,7 +110,7 @@ else if(tieup==true)
 function onSuccess(data)
         {
            $("#resultLog").html("Result: " + data);
-          
+          alert(data);
            var dd=data.split("|");
             alert(dd[0]);
    if(dd[0]==name) 
