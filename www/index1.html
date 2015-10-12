@@ -17,12 +17,6 @@
  <script src="js/phonegap-1.4.1.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
 
-<script type="text/javascript">
-$(document).bind("mobileinit", function() {
-    $.support.cors = true;
-    $.mobile.allowCrossDomainPages = true;
-});
-</script>
 <script type="text/javascript" charset="utf-8"> 
 function checkConnection() {
 //	alert('chkconn');
@@ -113,6 +107,7 @@ else if(tieup==true)
 
                   cache: false,
                   dataType: "text",
+                  crossDomain: true,  
                   success: onSuccess
                 });}});
     $("#resultLog").ajaxError(function(event, request, settings, exception) {
@@ -163,7 +158,8 @@ $(function() {
              data: ({name: fname,name1:pwd}),
 
                   cache: false,
-                  dataType: "text",
+                  dataType: 'text',
+                   crossDomain: true,  
                   success: onSuccess
                 });}});
     $("#resultLog").ajaxError(function(event, request, settings, exception) {
@@ -195,14 +191,19 @@ document.getElementById('pwd').value="";
         }
 }
 
+     document.addEventListener("deviceready", onDeviceReady, false);  
 
-
-     function onLoad()
+     /*function onLoad()
             {
                   document.addEventListener("deviceready", onDeviceReady, true);
-            }
+            }*/
         
          //ani
+     $(document).bind("mobileinit", function() {
+    $.support.cors = true;
+    $.mobile.allowCrossDomainPages = true;
+});
+
      
     function onDeviceReady() {
         document.addEventListener("exitapp", exitFromApp, false);
@@ -224,7 +225,7 @@ document.getElementById('pwd').value="";
  
 </script>
 </head>
-<body onload="javascript:onLoad();">
+<body>
 <!--.... ......First Page........ -->
 <div data-role="page" id="page" style="background-color:white;" >
 <div data-role="main" class="ui-content">
