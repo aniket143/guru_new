@@ -71,7 +71,6 @@ var tieup=document.getElementById('tieup').checked;
 var fname=document.getElementById('fname').value;
 var pwd=document.getElementById('pwd').value;
 
-alert(tieup);
 
 if(shop==false && tieup==false)
 {
@@ -91,7 +90,7 @@ else if(tieup==true)
   $("#callAjax2").ready(function() {
             var fname = $.trim($("#fname").val());
             var pwd = $.trim($("#pwd").val());
-            alert(fname);
+          
 
           if(fname.length > 0 && pwd.length > 0 )
             { $.ajax({
