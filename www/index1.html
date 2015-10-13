@@ -98,12 +98,12 @@ else if(tieup==true)
           if(fname.length > 0 && pwd.length > 0 )
             { $.ajax({
    // url: "tieup_login.php",
-     url: "http://shopnearn.co.in/mobileapp/tieup_login.php",
+     url: 'http://shopnearn.co.in/mobileapp/tieup_login.php',
            type     : 'GET',
              data: ({name: fname,name1:pwd}),
 
                   cache: false,
-                  dataType: "json",
+                  dataType: 'json',
                   crossDomain: true,  
                   success: onSuccess
                 });}});
@@ -150,12 +150,12 @@ $(function() {
           if(fname.length > 0 && pwd.length > 0)
             { $.ajax({
       // url: "shop_login.php",
-      url: "http://shopnearn.co.in/mobileapp/shop_login.php",
+      url: 'http://shopnearn.co.in/mobileapp/shop_login.php',
            type     : 'GET',
              data: ({name: fname,name1:pwd}),
 
                   cache: false,
-                  dataType: 'text',
+                  dataType: 'json',
                    crossDomain: true,  
                   success: onSuccess
                 });}});
