@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;">
  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">  
  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />  
  <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
@@ -13,6 +14,7 @@
  <script src="js/jquery-1.7.min.js"></script>  
  <script src="js/phonegap-1.4.1.js"></script>
   <script src="phonegap.js"></script>
+ <script src="phonegap-1.2.0.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
 
 <script type="text/javascript" charset="utf-8"> 
@@ -189,12 +191,12 @@ document.getElementById('pwd').value="";
         }
 }
 
-     document.addEventListener("deviceready", onDeviceReady, false);  
+    /* document.addEventListener("deviceready", onDeviceReady, false);  */
 
-     /*function onLoad()
+     function onBodyLoad()
             {
-                  document.addEventListener("deviceready", onDeviceReady, true);
-            }*/
+                  document.addEventListener("deviceready", onDeviceReady, false);
+            }
         
          //ani
      $(document).bind("mobileinit", function() {
@@ -224,7 +226,7 @@ document.getElementById('pwd').value="";
  
 </script>
 </head>
-<body>
+<body onload="onBodyLoad()">
 <!--.... ......First Page........ -->
 <div data-role="page" id="page" style="background-color:white;" >
 <div data-role="main" class="ui-content">
