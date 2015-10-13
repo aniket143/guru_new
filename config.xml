@@ -26,6 +26,7 @@
     <preference name="android-installLocation" value="auto" />
     <preference name="phonegap-version" value="3.7.0" />
 
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     <gap:plugin name="org.apache.cordova.battery-status" />
