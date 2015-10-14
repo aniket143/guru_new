@@ -19,14 +19,14 @@
 <script type="text/javascript" charset="utf-8"> 
 function checkConnection() {
 //	alert('chkconn');
-//if (doesConnectionExist() == true) {
+if (doesConnectionExist() == true) {
 	//	alert("connection exists!");
 			redirect();
-	//	} else {
+		} else {
 	//		 navigator.notification.alert('connection doesnt exist!',alertDismissed,'Reload Page','Done');
-			
-       //                     window.location.reload();
-//	}
+			alert("connection doesnt exists!");
+                          window.location.reload();
+	}
 	}
 	
 	function doesConnectionExist() {
