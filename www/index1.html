@@ -219,13 +219,20 @@ document.getElementById('pwd').value="";
     {
 //	window.app.close();
                if (navigator.app) {
-                   navigator.app.exitApp();
+                 console.log("in button");
+                 navigator.app.exitApp();
                 }
                 else if (navigator.device) {
+      	            console.log("in button");
                     navigator.device.exitApp();
                 }   
         }
-	
+        function exitFromApp1()
+    {
+//	w
+	device.exitApp();
+        }
+
  
 </script>
 </head>
@@ -254,6 +261,10 @@ document.getElementById('pwd').value="";
 
 </div>
        <button name="buttonClick" onclick="exitFromApp();">Exit App!</button>
+       	<input type="button" name="Exit" value="Exit" onclick="exitFromApp();"></input>
+       	       	<input type="button" name="Exit" value="Exit" onclick="exitFromApp1();"></input>
+
+
 </div>
   </div>
     </div> 
