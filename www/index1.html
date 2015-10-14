@@ -115,9 +115,9 @@ else if(tieup==true)
 function onSuccess(data)
         {
            $("#resultLog").html("Result: " + data);
-          alert(data);
+          //alert(data);
            var dd=data.split("|");
-            alert(dd[0]);
+           // alert(dd[0]);
    if(dd[0]==name) 
        {
 alert("Please enter correct username and password!!!");
@@ -217,8 +217,7 @@ document.getElementById('pwd').value="";
     }
    function exitFromApp()
     {
-	alert("jjfd");
-	window.app.close();
+//	window.app.close();
       navigator.app.exitApp();
     }
 	
