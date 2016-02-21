@@ -26,8 +26,8 @@
     <preference name="android-installLocation" value="auto" />
     <preference name="phonegap-version" value="cli-5.2.0" />
 
-<plugin name="cordova-plugin-whitelist" version="~1" />
-<gap:plugin name="com.phonegap.plugin.statusbar" />
+<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+     <gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera"  />
@@ -82,7 +82,5 @@
     <feature name="Notification">
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
 </feature>
-<plugins>
-<plugin name="NetworkStatus" value="cordova-plugin-NetworkManager" />
-</plugins>
+
 </widget>
