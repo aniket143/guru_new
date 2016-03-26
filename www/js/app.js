@@ -6,7 +6,7 @@ var resultDiv;
 
 document.addEventListener("deviceready", init, false);
 function init() {
-	document.querySelector("#startScan").addEventListener("touchend", startScan, false);
+	document.querySelector("#startScan").addEventListener("click", startScan, false);
 	resultDiv = document.querySelector("#results");
 }
 
