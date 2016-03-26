@@ -15,7 +15,7 @@ function startScan() {
 	alert("startscan");
 
 //	cordova.plugins.barcodeScanner.scan(
-cordova.plugins.barcodeScanner.scan(
+phonegap.plugins.barcodeScanner.scan(
 		function (result) {
 				alert("startscan2");
 
