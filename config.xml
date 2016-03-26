@@ -48,6 +48,7 @@
     <gap:plugin name="org.apache.cordova.vibration" />
     <gap:plugin name="com.badrit.backbutton" version="0.1.0" />
 <gap:plugin name="com.performanceactive.plugins.camera" spec="1.4" source="pgb" />
+<gap:plugin name="org.apache.cordova.media-capture" spec="0.3.6" source="pgb" />
 
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
