@@ -20,11 +20,12 @@
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
     <preference name="phonegap-version" value="cli-5.2.0" />
+        <preference name="SplashScreenDelay" value="3000" />
+        <preference name="AutoHideSplashScreen" value="true" />
 
 <gap:plugin name="cordova-plugin-whitelist" source="npm" />
      <gap:plugin name="com.phonegap.plugin.statusbar" />
@@ -84,5 +85,6 @@
     <feature name="Notification">
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
 </feature>
+
 
 </widget>
