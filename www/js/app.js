@@ -13,7 +13,7 @@ function init() {
 function startScan() {
 
 //	cordova.plugins.barcodeScanner.scan(
-phonegap.plugins.barcodeScanner.scan(
+cordova.plugins.barcodeScanner.scan(
 		function (result) {
 			var s = "Result: " + result.text + "<br/>" +
 			"Format: " + result.format + "<br/>" +
