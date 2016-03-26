@@ -15,7 +15,7 @@ function startScan() {
 	alert("startscan");
 
 //	cordova.plugins.barcodeScanner.scan(
-phonegap.plugins.barcodeScanner.scan(
+cordova.plugins.barcodeScanner.scan(
 		function (result) {
 				alert("startscan2");
 
@@ -29,4 +29,24 @@ phonegap.plugins.barcodeScanner.scan(
 		}
 	);
 
+}
+
+navigator.Backbutton.goHome(function() {
+  console.log('success')
+}, function() {
+  console.log('fail')
+});
+
+function cameratakpic(){
+	alert("hi");
+navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+    destinationType: Camera.DestinationType.FILE_URI });
+}
+function onSuccess(imageURI) {
+    var image = document.getElementById('myImage');
+    image.src = imageURI;
+}
+
+function onFail(message) {
+    alert('Failed because: ' + message);
 }
