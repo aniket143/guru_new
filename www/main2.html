@@ -12,8 +12,10 @@
 
     // Wait for Cordova to connect with the device
     //
+    function connect()
+    {
     document.addEventListener("deviceready",onDeviceReady,false);
-
+    }
     // Cordova is ready to be used!
     //
     function onDeviceReady() {
@@ -94,7 +96,7 @@
 
     </script>
   </head>
-  <body>
+  <body onload="connect();">
     <button onclick="capturePhoto();">Capture Photo</button> <br>
     <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
     <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
